@@ -64,7 +64,6 @@ var unicorn = {
 //creat in loop accordion 
 var menu : Array<any>=[winter, halloween, unicorn, gold, pink, sugar];
 const star = "&#11088";
-npm i @types/jquerynpm i 
 for(let i = 0; i<menu.length;i++){
 	       $(".accordion").append(`<div class="card">
                             <div class="card-header" id="heading${+i}">
