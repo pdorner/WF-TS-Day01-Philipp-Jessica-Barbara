@@ -86,3 +86,9 @@ for(let i = 0; i<menu.length;i++){
                         </div>`);
 }
 
+var hx = document.getElementById("carousel-item").offsetWidth
+var heightLg = hx/16*8.5
+var heightMd = hx/16*7
+console.log(hx)
+$(".col-md-12").css("height",heightMd)
+$(".col-lg-12").css("height",heightLg)
