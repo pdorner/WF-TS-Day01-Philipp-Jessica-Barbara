@@ -69,20 +69,20 @@ for(let i = 0; i<menu.length;i++){
 	       $(".accordion").append(`<div class="card">
                             <div class="card-header" id="heading${+i}">
                                 <h2 class="mb-0">
-                                    <button style = "width :90%" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse${+i}" aria-expanded="false" aria-controls="collapse${+i}">
-                                        <div class ="row"><h3 class="col-7 offset-1">${menu[i].name}</h3>  
-	       								<h3 class="col-3 text-right">${menu[i].price} €</h3></div>
+                                    <button style="width :100%" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse${+i}" aria-expanded="false" aria-controls="collapse${+i}">
+                                        <div class="row"><h3 class="col-6 text-left offset-1">${menu[i].name}</h3>  
+	       								<h3 class="col-4 text-right">${menu[i].price} €</h3></div>
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapse${+i}" class="collapse" aria-labelledby="heading${+i}" data-parent="#accordionExample">
                                 <div class="card-body row">
-                                	<img class="card-img col-4" src="${menu[i].img}">
-                                	<div class = "col-2">${star}${star}${star}${star}${star}</div>
-                                	<input class="col-6" ></input>
+                                	<img style="object-fit:cover" class="card-img col-4 offset-1" src="${menu[i].img}">
+                                	<div class="col-1 flex flex-column"><div class="h2 star">${star}</div><div class="h2 star">${star}</div><div class="h2 star">${star}</div><div class="h2 star">${star}</div><div class="h2 star">${star}</div></div>
+                                	<textarea class="col-5"></textarea>
+                                    <button class="btn btn-dark col-2 offset-9 mt-1">Send Feedback</button>
                                 </div>
                             </div>
                         </div>`);
 }
-
 
