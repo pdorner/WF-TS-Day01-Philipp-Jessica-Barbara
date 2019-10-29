@@ -47,6 +47,9 @@ var sugar = {
 //creat in loop accordion 
 var menu = [winter, halloween, unicorn, gold, pink, sugar];
 var star = "&#11088";
+npm;
+i;
+/jquerynpm i ;
 for (var i = 0; i < menu.length; i++) {
     $(".accordion").append("<div class=\"card\">\n                            <div class=\"card-header\" id=\"heading" + +i + "\">\n                                <h2 class=\"mb-0\">\n                                    <button style=\"width :100%\" class=\"btn btn-link\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapse" + +i + "\" aria-expanded=\"false\" aria-controls=\"collapse" + +i + "\">\n                                        <div class=\"row\"><h3 class=\"col-6 text-left offset-1\">" + menu[i].name + "</h3>  \n\t       \t\t\t\t\t\t\t\t<h3 class=\"col-4 text-right\">" + menu[i].price + " \u20AC</h3></div>\n                                    </button>\n                                </h2>\n                            </div>\n                            <div id=\"collapse" + +i + "\" class=\"collapse\" aria-labelledby=\"heading" + +i + "\" data-parent=\"#accordionExample\">\n                                <div class=\"card-body row\">\n                                \t<img style=\"object-fit:cover\" class=\"card-img col-4 offset-1\" src=\"" + menu[i].img + "\">\n                                \t<div class=\"col-1 flex flex-column\"><div class=\"h2 star\">" + star + "</div><div class=\"h2 star\">" + star + "</div><div class=\"h2 star\">" + star + "</div><div class=\"h2 star\">" + star + "</div><div class=\"h2 star\">" + star + "</div></div>\n                                \t<textarea class=\"col-5\"></textarea>\n                                    <button class=\"btn btn-dark col-2 offset-9 mt-1\">Send Feedback</button>\n                                </div>\n                            </div>\n                        </div>");
 }
