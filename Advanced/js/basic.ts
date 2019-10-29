@@ -63,6 +63,8 @@ var unicorn = {
 
 //creat in loop accordion 
 var menu : Array<any>=[winter, halloween, unicorn, gold, pink, sugar];
+const star = "&#11088";
+
 for(let i = 0; i<menu.length;i++){
 	       $(".accordion").append(`<div class="card">
                             <div class="card-header" id="heading${+i}">
@@ -74,15 +76,13 @@ for(let i = 0; i<menu.length;i++){
                                 </h2>
                             </div>
                             <div id="collapse${+i}" class="collapse" aria-labelledby="heading${+i}" data-parent="#accordionExample">
-                                <div class="card-body">
-                                	<img class="card-img" src="${menu[i].img}">
-                                	<input></input>
+                                <div class="card-body row">
+                                	<img class="card-img col-4" src="${menu[i].img}">
+                                	<div class = "col-2">${star}${star}${star}${star}${star}</div>
+                                	<input class="col-6" ></input>
                                 </div>
                             </div>
                         </div>`);
 }
 
-
-// winter.getName();
-// winter.getPrice();
 
